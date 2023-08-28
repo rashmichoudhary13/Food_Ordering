@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation bar */
+#navbar{
+     display: flex;
+     align-items: center;
+     position: sticky;
+     top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#logo{
+    margin: 8px 12px;
+}
+
+#logo img {
+     height: 59px;
+   margin: 3px 6px;
+
+}
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+#navbar li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    border-radius: 20px;  
+    padding: 3px 22px;      /* padding is imp here!!! Don't give it to li */
+      
+}
+#navbar li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Search Section */
+#navbar input{
+    padding: 5px;
+    margin-left: 410px;
+    width:194px;
+    border-radius: 15px;
+}
+
+.fas{
+    margin: 6px;
+    height: 24px;
+    font-size: 21px !important;
+
+}
+
+.fab{
+    color: white;
+    margin: 15px;
+    height: 44px;
+    font-size: 34px;
+    background: blue;
+    width: 44px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 44px!important;
+}
+
+
+ .fab:hover{
+    cursor: pointer;
+   }
+
+/* Home Section */
+
+#home{
+     display: flex;
+     flex-direction: column;
+    justify-content: center;      /* It is only used with display being flex. */
+    align-items: center;
+    padding: 3px 200px;
+    height:533px;
+}    
+
+#home::before{
+ content: "";
+ background: url(../bg2.jpg) no-repeat center center/cover; /* 2 dots are used before img name to come out of a single folder i.e. css */
+ position: absolute;
+ height: 625px;
+ top: 0px;
+ left: 0px;
+ width: 100%;
+ z-index: -1;
+ opacity: 0.89;
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* Services Section */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid red;
+    padding: 34px;
+    margin: -1px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;       /* It centers the element and It works when display is block */
+    display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* Our Clients section */
+
+#client-section{
+ height: 344px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section::before{
+    content:"";
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.7; 
+}
+
+#clients img{
+    width:145px;
+    padding: 34px
+}
+
+/* Contact Us */
+
+#contact{
+    position: relative;
+}
+
+#contact-box{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact::before{
+    content:"";
+    background: url('../contact.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1; 
+    opacity: 1.3;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact label{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    padding: 9px 20px;
+}
+
+/* Menu Section */
+
+#menu{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+   }
+
+.menu-item img{
+    height:180.9px;
+    width:205.9px;
+    clip-path:circle();
+    margin: 12px;
+    margin-right: 99px;
+    margin-top: 55px;
+ 
+}
+
+.item2 img{
+object-view-box: inset(5% 21% 11% 15%);
+}
+
+#menu:before{
+    content:"";
+    position:absolute;
+    background:url('../Menu.jpg') no-repeat center/100% 100%;
+    height:100%;
+    width:100%;
+    z-index:-1;
+}
+
+/* Menu Content */
+#write-up{
+    position: absolute;
+    top: 8%;
+    left: 12%;
+}
+
+#heading{
+    font-size: 3rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.first{
+   margin: 15px;
+}
+
+.same{
+    position: absolute;
+    top: 8%;
+    right: -140%;
+}
+
+/* Price Section */
+
+#price-tag{
+    position: absolute;
+    top: 30%;
+    right:59%;
+}
+
+.list-item li{
+    list-style: none;
+}
+
+.list-item1{
+    padding-top: 70px ;
+}
+
+#price2{
+    position: absolute;
+    top: -13%;
+   right: -590%;
+}
+
+.list-item2 {
+    margin-top: 65%;
+}
+
+
+
+/* Utility Classes */
+
+.list-item{
+    padding: 7px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+h4 {
+    color: orange;
+    font-size: 2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}

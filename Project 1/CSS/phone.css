@@ -1,0 +1,126 @@
+/* Navigation bar */
+#navbar{
+    flex-direction:column;
+}
+
+#logo img {
+  margin-right: 250px !important;
+}
+#navbar ul li a {
+    font-size: 1rem;
+    padding: 0px 10px !important;
+    padding-bottom: 8px !important;
+}
+
+#navbar ul{
+    margin-right: 16px !important;
+}
+
+/* search section */
+
+#navbar input{
+margin-top: -93px !important;
+margin-left: 72px!important;
+}
+
+.fas{
+    margin-left: 331px !important;
+    margin-top: -27px!important;   
+
+}
+
+.fab{
+    margin-left: 486px !important;
+    margin-top: -43px!important;
+
+}
+
+.fa-instagram{
+    margin-left: 635px!important;
+    margin-top: -57px !important;
+    margin-bottom: 93px  !important;
+}
+
+
+/* Home */
+#home{
+    height: 377px !important;
+    padding: 3px 16px !important;
+}
+
+#home::before{
+    height: 480px !important;
+}
+
+#home p{
+    font-size: 13px !important;
+}
+/* Service */
+
+#services{
+    flex-direction: column;
+}
+
+#services .box{
+    padding: 14px !important;
+    margin: 2px 0px !important;
+    margin-bottom: 20px !important;
+}
+
+/* Client */
+
+#clients{
+    flex-wrap: wrap;
+}
+
+#clients img{
+    width: 87px !important;
+    padding: 18px !important;
+    height: auto;
+}
+/* Contact us */
+#contact-box form{
+    width: 80% !important;
+}
+
+/* footer */
+
+/* utility */
+
+.h-primary{
+    font-size: 26px !important;
+}
+
+.btn{
+    font-size: 13px !important;
+    padding: 4px 8px !important;
+    
+}
+
+@media only screen and (max-width:414px){
+
+    #navbar input{
+        margin-top: -93px !important;
+        margin-left: 72px!important;
+        }
+        
+        .fas{
+            margin-left: 331px !important;
+            margin-top: -27px!important;   
+        
+        }
+        
+        .fab{
+            margin-left: 486px !important;
+            margin-top: -43px!important;
+        
+        }
+        
+        .fa-instagram{
+            margin-left: 635px!important;
+            margin-top: -57px !important;
+            margin-bottom: 93px  !important;
+        }
+        
+
+}
